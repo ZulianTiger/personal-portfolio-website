@@ -9,7 +9,8 @@ class Home extends Component {
         return (
             <div>
                 <HomeTitle>This is a styled component header 1.</HomeTitle>
-                <NewButton primary text="Secondary"/>
+                <NewButton primary text="Primary" containerWidth="30%" />
+                <NewButton text="Secondary" containerWidth="30%"/>
             </div>
         )
     }
