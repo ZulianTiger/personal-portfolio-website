@@ -5,14 +5,28 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
     .navbar {
-        background-color: #666;
+        background-color: transparent;
+        width: 100%;
     }
 
-    .navbar-brand, navbar-nav, nav-link {
+    .navbar-brand, navbar-nav {
         color: #bbb;
+
+        @media only screen and (max-width: 600px) {
+            width: 0px;
+        }
 
         &:hover {
             color: white;
+        }
+    }
+
+    .nav-link {
+        a {
+            color: white;
+            text-align: right;
+            width: 95%;
+            display: inline-block;
         }
     }
 `;
@@ -21,7 +35,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar expand="lg">
+        <Navbar variant="dark" expand="lg">
             <Navbar.Brand href="/">Styled Components Test1</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

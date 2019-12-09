@@ -37,6 +37,7 @@ export default class NewButton extends Component {
         else
             containerWidth = this.props.containerWidth;
     }
+
     calculateMargin = () => {
         let temp = (100 - parseInt(containerWidth.split("%"))) / 2;
         containerMargin = temp.toString() + "%";

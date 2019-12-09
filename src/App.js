@@ -12,15 +12,15 @@ function App() {
   return (
     <React.Fragment>
       <Router>
-        <NavigationBar />
-        <Layout>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route component={NoPage} />
-          </Switch>
-        </Layout>
+        
+        {/*<Layout>*/}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route component={NoPage} />
+        </Switch>
+        {/*</Layout>*/}
       </Router>
     </React.Fragment>
   );
