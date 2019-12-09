@@ -1,28 +1,28 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { ScrollingProvider } from "react-scroll-section";
 
-import Home from './Containers/Home'
-import About from './Containers/About'
-import Contact from './Containers/Contact'
+import MainContainer from './Containers/MainContainer'
 import NoPage from './Containers/NoPage'
-import { Layout } from './Components/Layout'
-import { NavigationBar } from './Components/NavigationBar'
 
 function App() {
   return (
-    <React.Fragment>
+    <ScrollingProvider scrollBehavior="smooth" >
+
       <Router>
-        
-        {/*<Layout>*/}
+
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route component={NoPage} />
+
+          <Route exact path='/' component={MainContainer} />
+          <Route path="*" component={NoPage} />
+
         </Switch>
-        {/*</Layout>*/}
+
+
+
       </Router>
-    </React.Fragment>
+
+    </ScrollingProvider >
   );
 }
 

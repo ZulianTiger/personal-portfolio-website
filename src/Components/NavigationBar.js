@@ -3,6 +3,8 @@ import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { SectionLink } from "react-scroll-section";
+
 const Styles = styled.div`
     .navbar {
         background-color: transparent;
@@ -36,25 +38,44 @@ const Styles = styled.div`
 export const NavigationBar = () => (
     <Styles>
         <Navbar variant="dark" expand="lg">
-            <Navbar.Brand href="/">Styled Components Test1</Navbar.Brand>
+            <Navbar.Brand href="/">Armin Sarajlic</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
+
                     <Nav.Item>
                         <Nav.Link>
-                            <Link to="/">Home</Link>
+                            <SectionLink section={"home"} >
+                                {link => (
+                                    <Link onClick={link.onClick} selected={link.isSelected}>
+                                        Home
+                                    </Link>)}
+                            </SectionLink>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link to="/about">About</Link>
+                            <SectionLink section={"about"} >
+                                {link => (
+                                    <Link onClick={link.onClick} selected={link.isSelected}>
+                                        About
+                                    </Link>)}
+                            </SectionLink>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link to="/contact">Contact</Link>
+                            <SectionLink section={"contact"} >
+                                {link => (
+                                    <Link onClick={link.onClick} selected={link.isSelected}>
+                                        Contact
+                                    </Link>)}
+                            </SectionLink>
                         </Nav.Link>
                     </Nav.Item>
+
+
+
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

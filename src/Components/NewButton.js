@@ -7,6 +7,16 @@ const Container = styled.div`
         margin-left: 0px;
     }
 
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-300%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    animation: 0.4s ease-out 0s 1 ${props => (props.slide ? "slideInFromLeft" : "none")};
     width: ${props => (props.containerWidth)};
     margin-left: ${props => (props.containerMargin)};
 `
@@ -50,7 +60,7 @@ export default class NewButton extends Component {
 
     render() {
         return (
-            <Container containerWidth={containerWidth} containerMargin={containerMargin}>
+            <Container containerWidth={containerWidth} containerMargin={containerMargin} slide={this.props.slide}>
                 <Button primary={this.props.primary}>
                     <Text primary={this.props.primary}>
                         {this.props.text}
