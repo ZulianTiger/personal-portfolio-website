@@ -8,20 +8,12 @@ import NoPage from './Containers/NoPage'
 function App() {
   return (
     <ScrollingProvider scrollBehavior="smooth" >
-
       <Router>
-
         <Switch>
-
           <Route exact path='/' component={MainContainer} />
           <Route path="*" component={NoPage} />
-
         </Switch>
-
-
-
       </Router>
-
     </ScrollingProvider >
   );
 }
