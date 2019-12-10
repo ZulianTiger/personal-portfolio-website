@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 import { SectionLink } from "react-scroll-section";
 
+import logoimg from '../Images/logo.png'
+
 const Styles = styled.div`
     .navbar {
         background-color: transparent;
@@ -32,13 +34,24 @@ const Styles = styled.div`
         }
     }
 `;
-
+const Logo = styled.img`
+    height: 50px;
+    width: auto;
+`
+const Signature = styled.img`
+    margin-left: 10px;
+    height: 20px;
+    width: auto;
+`
 
 
 export const NavigationBar = () => (
     <Styles>
         <Navbar variant="dark" expand="lg">
-            <Navbar.Brand href="/">Armin Sarajlic</Navbar.Brand>
+            <Navbar.Brand href="/">
+                <Logo src={require('../Images/logo.png')} />
+                <Signature src={require('../Images/signature.png')} />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
