@@ -19,18 +19,20 @@ const Container = styled.div`
     animation: 0.4s ease-out 0s 1 ${props => (props.slide ? "slideInFromLeft" : "none")};
     width: ${props => (props.containerWidth)};
     margin-left: ${props => (props.containerMargin)};
+    padding-bottom: 30px;
+    padding-top: 30px;
 `
 const Button = styled.button`
     width: 100%;
     height: 50px;
-    background-color: ${props => (props.primary ? "green" : "transparent")};
+    background-color: ${props => (props.primary ? "#cc0c1c" : "transparent")};
     border-width: ${props => (props.primary ? "0px" : "2px")};
-    border-color: green;
+    border-color: #cc0c1c;
     border-radius: 20px;
     margin-top: 15px;
 `
 const Text = styled.text`
-    color: ${props => (props.primary ? "white" : "green")};
+    color: ${props => (props.primary ? "white" : "#cc0c1c")};
     font-size: 22;
     letter-spacing: 1.5px;
     text-align: center;
@@ -49,8 +51,13 @@ export default class NewButton extends Component {
     }
 
     calculateMargin = () => {
-        let temp = (100 - parseInt(containerWidth.split("%"))) / 2;
-        containerMargin = temp.toString() + "%";
+        if (!this.props.containerMargin) {
+            let temp = (100 - parseInt(containerWidth.split("%"))) / 2;
+            containerMargin = temp.toString() + "%";
+        }
+        else {
+            containerMargin = this.props.containerMargin;
+        }
     }
 
     componentWillMount() {

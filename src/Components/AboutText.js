@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import SectionTitle from '../Components/SectionTitle'
 import SectionText from '../Components/SectionText'
+import NewButton from '../Components/NewButton'
 
 const Container = styled.div`
     @media only screen and (max-width: 600px) {
@@ -21,6 +22,7 @@ export default class AboutText extends Component {
                 <SectionText 
                     text="Experienced software developer, computer technician, and hardware enthusiast. Currently specialized in Mobile application development, including both iOS and Android, using the React Native JavaScript framework. My other skills include Web Development, Game Development, Audio & Video production, and teaching online. I teach over 10,000 students across four high rated courses ranging from Computer Networks to Game Development, and React Native mobile app development." 
                 />
+                <NewButton primary containerWidth="35%" containerMargin="0%" text="Download CV"/>
             </Container>
         )
     }

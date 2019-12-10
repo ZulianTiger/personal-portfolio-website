@@ -11,10 +11,10 @@ const Text = styled.p`
         font-size: 16px;
     }
     @media only screen and (min-width: 600px) {
-        font-size: 22px;
+        font-size: 20px;
     }
     @media only screen and (min-width: 992px) {
-        font-size: 28px;
+        font-size: 22px;
     }
 `
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Layout } from '../Components/Layout'
+
 import AboutImage from '../Components/AboutImage'
 import AboutText from '../Components/AboutText'
 
