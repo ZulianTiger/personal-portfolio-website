@@ -6,13 +6,24 @@ import { NavigationBar } from '../Components/NavigationBar'
 import { Section } from "react-scroll-section"
 import Button from '../Components/Button'
 
-import landingimg from '../Images/landingbg.png'
+import landingimg1080 from '../Images/landingbg1080.png'
+import landingimg1440 from '../Images/landingbg1440.png'
+import landingimg2160 from '../Images/landingbg2160.png'
 
 const LandingBg = styled.div`
     width: 100%;
     min-height: 100vh;
-    background-image: url(${landingimg});
     background-color: #2b2d35;
+    background-image: url(${landingimg1080});
+    @media only screen and (min-width: 1920px) {
+        background-image: url(${landingimg1080});
+    }
+    @media only screen and (min-width: 2560px) {
+        background-image: url(${landingimg1440});
+    }
+    @media only screen and (min-width: 3840px) {
+        background-image: url(${landingimg2160});
+    }
 `
 const Hello = styled.h3`
     margin-top: 10%;
