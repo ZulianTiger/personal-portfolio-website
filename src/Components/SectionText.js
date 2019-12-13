@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     display: inline-block;
-    margin-top: 20px;
 `
 const Text = styled.p`
     color: white;
+    margin-top: 20px;
     @media only screen and (max-width: 600px) {
         font-size: 16px;
     }
