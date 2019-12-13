@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     display: inline-block;
-    margin-top: 20%;
+    
+    margin-top: ${props => (props.marginTop ? props.marginTop : "20%")};
     @media only screen and (max-width: 600px) {
         margin-top: 5%;
     }
@@ -11,7 +12,7 @@ const Container = styled.div`
         margin-top: 5%;
     }
     @media only screen and (min-width: 992px) {
-        margin-top: 20%;
+        margin-top: ${props => (props.marginTop ? props.marginTop : "20%")};
     }
 `
 const Title = styled.h1`
@@ -36,7 +37,7 @@ const Underline = styled.div`
 export default class SectionTitle extends Component {
     render() {
         return (
-            <Container>
+            <Container marginTop={this.props.marginTop}>
                 <Title>
                     {this.props.text}    
                 </Title>

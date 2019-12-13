@@ -5,8 +5,6 @@ import styled from 'styled-components';
 
 import { SectionLink } from "react-scroll-section";
 
-import logoimg from '../Images/logo.png'
-
 const Styles = styled.div`
     .navbar {
         background-color: transparent;
@@ -72,6 +70,16 @@ export const NavigationBar = () => (
                                 {link => (
                                     <Link onClick={link.onClick} selected={link.isSelected}>
                                         About
+                                    </Link>)}
+                            </SectionLink>
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link>
+                            <SectionLink section={"portfolio"} >
+                                {link => (
+                                    <Link onClick={link.onClick} selected={link.isSelected}>
+                                        Portfolio
                                     </Link>)}
                             </SectionLink>
                         </Nav.Link>

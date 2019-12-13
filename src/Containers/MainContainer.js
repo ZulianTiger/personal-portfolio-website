@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Home from './Home'
 import About from './About'
+import Portfolio from './Portfolio'
 import Contact from './Contact'
 
 class MainContainer extends Component {
@@ -10,6 +11,7 @@ class MainContainer extends Component {
             <React.Fragment>
                 <Home />
                 <About />
+                <Portfolio />
                 <Contact />
             </React.Fragment>
         )
