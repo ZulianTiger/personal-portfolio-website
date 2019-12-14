@@ -106,7 +106,6 @@ export default class SectionText extends Component {
                             </LearnMoreText>
                         </LearnMoreButton>
                     </LearnMoreContainer>
-
                 </CardContainer>
                 <CardContainer>
                     <CardImage src={require('../Images/bbqlogo.png')} />
@@ -116,6 +115,14 @@ export default class SectionText extends Component {
                     <CardDescription>
                         It looks so good, I might as well not stop. Let's make some happy little clouds in our world. This is the fun part Be brave. You are only limited by your imagination. Zip. That easy.
                     </CardDescription>
+                    <LearnMoreContainer>
+                        <LearnMoreButton>
+                            <LearnMoreText>
+                                Learn More
+                                <LearnMoreUnderline />
+                            </LearnMoreText>
+                        </LearnMoreButton>
+                    </LearnMoreContainer>
                 </CardContainer>
                 <CardContainer>
                     <CardImage src={require('../Images/bbqlogo.png')} />
@@ -125,6 +132,14 @@ export default class SectionText extends Component {
                     <CardDescription>
                         It looks so good, I might as well not stop. Let's make some happy little clouds in our world. This is the fun part Be brave. You are only limited by your imagination. Zip. That easy.
                     </CardDescription>
+                    <LearnMoreContainer>
+                        <LearnMoreButton>
+                            <LearnMoreText>
+                                Learn More
+                                <LearnMoreUnderline />
+                            </LearnMoreText>
+                        </LearnMoreButton>
+                    </LearnMoreContainer>
                 </CardContainer>
             </Container>
         )
