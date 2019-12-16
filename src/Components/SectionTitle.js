@@ -30,7 +30,7 @@ const Title = styled.h1`
 const Underline = styled.div`
     width: 75%;
     height: 5px;
-    background-color: red;
+    background-color: #cc0c1c;
     border-radius: 25px;
 `
 

@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Section } from "react-scroll-section"
+import Title from '../Components/Title'
 
-import Title from './Title'
-import RecentProjects from '../Components/RecentProjects'
-
-const Container = styled.div`
+const CoursesContainer = styled.div`
     min-height: 100vh;
     background-color: #2b2d35;
     
@@ -22,13 +21,14 @@ const Container = styled.div`
     }
 `
 
-export default class PortfolioContainer extends Component {
+export default class Courses extends Component {
     render() {
         return (
-            <Container>
-                <Title title="Portfolio" subtitle="Most recent" />
-                <RecentProjects />
-            </Container>
+            <Section id="courses">
+                <CoursesContainer>
+                    <Title title="Courses" subtitle="Most recent" />
+                </CoursesContainer>
+            </Section>
         )
     }
 }

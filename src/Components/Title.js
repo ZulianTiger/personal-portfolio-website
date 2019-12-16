@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import SectionTitle from '../Components/SectionTitle'
-import Button from '../Components/Button'
+import SectionTitle from './SectionTitle'
 
 const Container = styled.div`
     
@@ -22,13 +21,13 @@ const SectionSubtitle = styled.h2`
     }
 `
 
-export default class PortfolioTitle extends Component {
+export default class Title extends Component {
     render() {
         return (
             <Container>
-                <SectionTitle text="Portfolio" marginTop="5%" />
+                <SectionTitle text={this.props.title} marginTop="5%" />
                 <SectionSubtitle>
-                    Most recent projects
+                    {this.props.subtitle}
                 </SectionSubtitle>
             </Container>
         )

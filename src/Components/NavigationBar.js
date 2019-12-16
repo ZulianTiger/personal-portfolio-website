@@ -53,7 +53,6 @@ export const NavigationBar = () => (
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-
                     <Nav.Item>
                         <Nav.Link>
                             <SectionLink section={"home"} >
@@ -86,6 +85,16 @@ export const NavigationBar = () => (
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
+                            <SectionLink section={"courses"} >
+                                {link => (
+                                    <Link onClick={link.onClick} selected={link.isSelected}>
+                                        Courses
+                                    </Link>)}
+                            </SectionLink>
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link>
                             <SectionLink section={"contact"} >
                                 {link => (
                                     <Link onClick={link.onClick} selected={link.isSelected}>
@@ -94,9 +103,6 @@ export const NavigationBar = () => (
                             </SectionLink>
                         </Nav.Link>
                     </Nav.Item>
-
-
-
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
