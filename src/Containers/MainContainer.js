@@ -4,6 +4,7 @@ import Home from './Home'
 import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
+import Footer from './Footer'
 
 class MainContainer extends Component {
     render() {
@@ -12,7 +13,7 @@ class MainContainer extends Component {
                 <Home />
                 <About />
                 <Portfolio />
-                <Contact />
+                <Footer />
             </React.Fragment>
         )
     }
