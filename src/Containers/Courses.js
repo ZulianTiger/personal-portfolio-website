@@ -20,13 +20,54 @@ const CoursesContainer = styled.div`
         padding-right: 100px;
     }
 `
+const CourseRow = styled.div`
+    width: 100%;
+    padding-bottom: ${props => (props.last ? "50px" : "10px")};
+    margin-top: 50px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    @media only screen and (max-width: 1199px) {
+        flex-direction: column;
+        margin-top: -10px;
+    } 
+`
+const CourseCard = styled.div`
+    width: 40%;
+    height: 300px;
+    background-color: #41424a;
+    @media only screen and (max-width: 1199px) {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    } 
+`
+const CourseImage = styled.img`
+    width: 50%;
+`
 
 export default class Courses extends Component {
     render() {
         return (
             <Section id="courses">
                 <CoursesContainer>
-                    <Title title="Courses" subtitle="Most recent" />
+                    <Title title="Courses" />
+                    <CourseRow>
+                        <CourseCard>
+                            <CourseImage src={require('../Images/course1.jpg')} />
+                        </CourseCard>
+                        <CourseCard transition>
+                            <CourseImage src={require('../Images/course2.jpg')} />
+                        </CourseCard>
+                    </CourseRow>
+                    <CourseRow last>
+                        <CourseCard>
+                            <CourseImage src={require('../Images/course3.jpg')} />
+                        </CourseCard>
+                        <CourseCard>
+                            <CourseImage src={require('../Images/course4.jpg')} />
+                        </CourseCard>
+                    </CourseRow>
                 </CoursesContainer>
             </Section>
         )
