@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Section } from "react-scroll-section"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCodeBranch } from '@fortawesome/free-solid-svg-icons'
-import { Row } from 'react-bootstrap'
-
 
 const FooterContainer = styled.div`
     background-color: #41424a;
