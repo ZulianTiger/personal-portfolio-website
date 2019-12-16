@@ -35,15 +35,28 @@ const CourseRow = styled.div`
 const CourseCard = styled.div`
     width: 40%;
     height: 300px;
-    background-color: #41424a;
+    background-color: #2b2d35;
+    flex-direction: row;
+    display: flex;
     @media only screen and (max-width: 1199px) {
         width: 90%;
         margin-left: 5%;
         margin-top: 10px;
     } 
 `
-const CourseImage = styled.img`
+const LeftPart = styled.div`
     width: 50%;
+    height: 100%;
+    background-color: #2b2d35;
+`
+const RightPart = styled.div`
+    width: 50%;
+    height: 100%;
+    background-color: #41424a;
+`
+const CourseImage = styled.img`
+    width: 100%;
+    border-radius: 5px;
 `
 
 export default class Courses extends Component {
@@ -54,18 +67,38 @@ export default class Courses extends Component {
                     <Title title="Courses" />
                     <CourseRow>
                         <CourseCard>
-                            <CourseImage src={require('../Images/course1.jpg')} />
+                            <LeftPart>
+                                <CourseImage src={require('../Images/course1.jpg')} />
+                            </LeftPart>
+                            <RightPart>
+
+                            </RightPart>
                         </CourseCard>
                         <CourseCard transition>
-                            <CourseImage src={require('../Images/course2.jpg')} />
+                            <LeftPart>
+                                <CourseImage src={require('../Images/course2.jpg')} />
+                            </LeftPart>
+                            <RightPart>
+
+                            </RightPart>
                         </CourseCard>
                     </CourseRow>
                     <CourseRow last>
                         <CourseCard>
-                            <CourseImage src={require('../Images/course3.jpg')} />
+                            <LeftPart>
+                                <CourseImage src={require('../Images/course3.jpg')} />
+                            </LeftPart>
+                            <RightPart>
+
+                            </RightPart>
                         </CourseCard>
                         <CourseCard>
-                            <CourseImage src={require('../Images/course4.jpg')} />
+                            <LeftPart>
+                                <CourseImage src={require('../Images/course4.jpg')} />
+                            </LeftPart>
+                            <RightPart>
+
+                            </RightPart>
                         </CourseCard>
                     </CourseRow>
                 </CoursesContainer>
