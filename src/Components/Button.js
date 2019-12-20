@@ -8,8 +8,8 @@ const Container = styled.div`
     }
     width: ${props => (props.containerWidth)};
     margin-left: ${props => (props.containerMargin)};
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: ${props => (props.containerPaddingTop ? props.containerPaddingTop : "30px")};
+    padding-top: ${props => (props.containerPaddingBot ? props.containerPaddingBot : "30px")};
 `
 const Btn = styled.button`
     width: 100%;
@@ -30,7 +30,7 @@ const Text = styled.text`
 export default class Button extends Component {
     render() {
         return (
-            <Container containerWidth={this.props.containerWidth} containerMargin={this.props.containerMargin}>
+            <Container containerPaddingBot={this.props.containerPaddingBot} containerPaddingTop={this.props.containerPaddingTop} containerWidth={this.props.containerWidth} containerMargin={this.props.containerMargin}>
                 <Btn primary={this.props.primary}>
                     <Text primary={this.props.primary}>
                         {this.props.text}

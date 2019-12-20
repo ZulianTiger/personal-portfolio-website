@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Section } from "react-scroll-section"
 import Title from '../Components/Title'
+import Button from '../Components/Button'
 
 const CoursesContainer = styled.div`
     min-height: 100vh;
@@ -34,10 +35,22 @@ const CourseRow = styled.div`
 `
 const CourseCard = styled.div`
     width: 40%;
-    height: 300px;
     background-color: #2b2d35;
     flex-direction: row;
     display: flex;
+    transition: 0.4s;
+    &:hover p {
+        div {
+            width: 80%;
+            background-color: #fafafa;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        flex-direction: column;
+    }
     @media only screen and (max-width: 1199px) {
         width: 90%;
         margin-left: 5%;
@@ -48,15 +61,66 @@ const LeftPart = styled.div`
     width: 50%;
     height: 100%;
     background-color: #2b2d35;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        background-color: #41424a;
+    }
 `
 const RightPart = styled.div`
     width: 50%;
     height: 100%;
     background-color: #41424a;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 const CourseImage = styled.img`
     width: 100%;
-    border-radius: 5px;
+`
+const CourseTitle = styled.h5`
+    margin-top: 20px;
+    color: #fafafa;
+    text-align: center;
+`
+const CourseDescription = styled.p`
+    color: #c9c9c9;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+`
+const LearnMoreContainer = styled.div`
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+`
+const LearnMoreButton = styled.button`
+    background-color: transparent;
+    border-width: 0px;
+`
+const LearnMoreText = styled.p`
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0px;
+`
+const LearnMoreUnderline = styled.div`
+    transition: 0.4s;
+    width: 60%;
+    height: 5px;
+    background-color: #cc0c1c;
+    border-radius: 20px;
+`
+const CourseFeatures = styled.p`
+    color: #c9c9c9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 0px;
 `
 
 export default class Courses extends Component {
@@ -69,9 +133,19 @@ export default class Courses extends Component {
                         <CourseCard>
                             <LeftPart>
                                 <CourseImage src={require('../Images/course1.jpg')} />
+                                <CourseFeatures>35 Lectures | 6,134 Students</CourseFeatures>
                             </LeftPart>
                             <RightPart>
-
+                                <CourseTitle>Master React Native by Developing a Full Cross-Platform App</CourseTitle>
+                                <CourseDescription>Learn how to design and create a cross platform mobile app with Adobe XD and React Native.</CourseDescription>
+                                <LearnMoreContainer>
+                                    <LearnMoreButton>
+                                        <LearnMoreText>
+                                            view on udemy
+                                            <LearnMoreUnderline />
+                                        </LearnMoreText>
+                                    </LearnMoreButton>
+                                </LearnMoreContainer>
                             </RightPart>
                         </CourseCard>
                         <CourseCard transition>
