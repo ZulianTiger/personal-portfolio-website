@@ -15,6 +15,9 @@ const LandingBg = styled.div`
     min-height: 100vh;
     background-color: #2b2d35;
     background-image: url(${landingimg1080});
+    @media only screen and (max-width: 768px) {
+        min-height: 0px;
+    }
     @media only screen and (min-width: 1920px) {
         background-image: url(${landingimg1080});
     }
