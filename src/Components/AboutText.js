@@ -20,7 +20,10 @@ export default class AboutText extends Component {
             <Container>
                 <SectionTitle text="About me" />
                 <SectionText 
-                    text="Experienced software developer, computer technician, and hardware enthusiast. Currently specialized in Mobile application development, including both iOS and Android, using the React Native JavaScript framework. My other skills include Web Development, Game Development, Audio & Video production, and teaching online. I teach over 10,000 students across four high rated courses ranging from Computer Networks to Game Development, and React Native mobile app development." 
+                    text="Experienced software developer, computer technician, and hardware enthusiast. Currently specialized in Mobile application development, including both iOS and Android, using the React Native JavaScript framework. My other skills include Web Development, Game Development, Audio & Video production, and teaching online." 
+                />
+                <SectionText 
+                    text="I teach over 10,000 students across four high rated courses ranging from Computer Networks to Game Development, and React Native mobile app development." 
                 />
                 <Button primary containerWidth="25%" containerMargin="0%" text="Download CV"/>
             </Container>

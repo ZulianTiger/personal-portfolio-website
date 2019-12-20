@@ -10,8 +10,8 @@ const Container = styled.div`
     }
 `
 const Image = styled.img`
-    width: 50%;
-    margin-left: 25%;
+    
+    width: 100%;
     height: auto;
     margin-top: 10%;
     @media only screen and (min-width: 992px) {
@@ -23,7 +23,7 @@ export default class AboutImage extends Component {
     render() {
         return (
             <Container>
-                <Image src={require('../Images/coffee.png')} />
+                <Image src={require('../Images/me.png')} />
             </Container>
         )
     }
