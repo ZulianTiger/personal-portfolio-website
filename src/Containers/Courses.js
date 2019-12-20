@@ -81,6 +81,7 @@ const CourseTitle = styled.h5`
     margin-top: 20px;
     color: #fafafa;
     text-align: center;
+    min-height: 48px;
 `
 const CourseDescription = styled.p`
     color: #c9c9c9;
@@ -89,6 +90,7 @@ const CourseDescription = styled.p`
     padding-bottom: 20px;
     padding-left: 10%;
     padding-right: 10%;
+    min-height: 92px;
 `
 const LearnMoreContainer = styled.div`
     justify-content: center;
@@ -149,29 +151,59 @@ export default class Courses extends Component {
                             </RightPart>
                         </CourseCard>
                         <CourseCard transition>
-                            <LeftPart>
+                        <LeftPart>
                                 <CourseImage src={require('../Images/course2.jpg')} />
+                                <CourseFeatures>10 Lectures | 869 Students</CourseFeatures>
                             </LeftPart>
                             <RightPart>
-
+                                <CourseTitle>Unity: MySQL Database Management</CourseTitle>
+                                <CourseDescription>Create a Login & Registration system for your game in 1 hour!</CourseDescription>
+                                <LearnMoreContainer>
+                                    <LearnMoreButton>
+                                        <LearnMoreText>
+                                            view on udemy
+                                            <LearnMoreUnderline />
+                                        </LearnMoreText>
+                                    </LearnMoreButton>
+                                </LearnMoreContainer>
                             </RightPart>
                         </CourseCard>
                     </CourseRow>
                     <CourseRow last>
                         <CourseCard>
-                            <LeftPart>
+                        <LeftPart>
                                 <CourseImage src={require('../Images/course3.jpg')} />
+                                <CourseFeatures>66 Lectures | 3,237 Students</CourseFeatures>
                             </LeftPart>
                             <RightPart>
-
+                                <CourseTitle>Unity: Learn Android Game Development by recreating games</CourseTitle>
+                                <CourseDescription>A guide on how to make the following games in Unity: Color Switch, aa, Flappy Bird, Dino T-Rex</CourseDescription>
+                                <LearnMoreContainer>
+                                    <LearnMoreButton>
+                                        <LearnMoreText>
+                                            view on udemy
+                                            <LearnMoreUnderline />
+                                        </LearnMoreText>
+                                    </LearnMoreButton>
+                                </LearnMoreContainer>
                             </RightPart>
                         </CourseCard>
                         <CourseCard>
-                            <LeftPart>
+                        <LeftPart>
                                 <CourseImage src={require('../Images/course4.jpg')} />
+                                <CourseFeatures>15 Lectures | 1,822 Students</CourseFeatures>
                             </LeftPart>
                             <RightPart>
-
+                                <CourseTitle>IP Addressing for Beginners - CCNA Preparation</CourseTitle>
+                                <CourseDescription>Everything a beginner needs to know about IP addresses and basics of Network Communication.</CourseDescription>
+                                <LearnMoreContainer>
+                                    <LearnMoreButton>
+                                        <LearnMoreText>
+                                            view on udemy
+                                            <LearnMoreUnderline />
+                                        </LearnMoreText>
+                                    </LearnMoreButton>
+                                </LearnMoreContainer>
                             </RightPart>
                         </CourseCard>
                     </CourseRow>
