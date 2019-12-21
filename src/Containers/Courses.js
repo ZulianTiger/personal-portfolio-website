@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Section } from "react-scroll-section"
 import Title from '../Components/Title'
-import Button from '../Components/Button'
 
 const CoursesContainer = styled.div`
     min-height: 100vh;

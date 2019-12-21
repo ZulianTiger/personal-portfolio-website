@@ -106,15 +106,15 @@ class Footer extends Component {
                         </SignatureContainer>
                         <LinksContainer>
                             <SingleLinkContainer style={{ flexDirection: "row", display: "flex" }}>
-                                <i style={{ color: "#fafafa", fontSize: 22 }} class="fab fa-github"></i>
+                                <i style={{ color: "#fafafa", fontSize: 22 }} className="fab fa-github"></i>
                                 <Link href="http://www.github.com/ZulianTiger">github.com/ZulianTiger</Link>
                             </SingleLinkContainer>
                             <SingleLinkContainer style={{ flexDirection: "row", display: "flex" }}>
-                                <i style={{ color: "#fafafa", fontSize: 22 }} class="fab fa-linkedin-in"></i>
+                                <i style={{ color: "#fafafa", fontSize: 22 }} className="fab fa-linkedin-in"></i>
                                 <Link href="https://www.linkedin.com/in/armin-sarajlic/">linkedin.com/armin-sarajlic</Link>
                             </SingleLinkContainer>
                             <SingleLinkContainer style={{ flexDirection: "row", display: "flex" }}>
-                                <i style={{ color: "#fafafa", fontSize: 22 }} class="fas fa-graduation-cap"></i>
+                                <i style={{ color: "#fafafa", fontSize: 22 }} className="fas fa-graduation-cap"></i>
                                 <Link href="https://www.udemy.com/user/armin-sarajlic/">udemy.com/armin-sarajlic</Link>
                             </SingleLinkContainer>
                         </LinksContainer>

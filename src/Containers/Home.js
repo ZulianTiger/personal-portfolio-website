@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { Layout } from '../Components/Layout'
 import { NavigationBar } from '../Components/NavigationBar'
 import { Section } from "react-scroll-section"
+import { SectionLink } from "react-scroll-section";
+import { Link } from 'react-router-dom';
 import Button from '../Components/Button'
 
 import landingimg1080 from '../Images/landingbg1080.png'
@@ -61,6 +63,42 @@ const SubTitle = styled.h2`
         width: 50%;
     }
 `
+const ButtonContainer = styled.div`
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        margin-left: 0px;
+    }
+    width: ${props => (props.containerWidth)};
+    margin-left: ${props => (props.containerMargin)};
+    background-color: #cc0c1c;
+    border-radius: 20px;
+    margin-top: 50px;
+
+    a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            text-decoration: none;
+        }
+        &:active {
+            p {
+                font-weight: bold;
+            }
+        }
+
+        p {
+            margin-bottom: 0px;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+            color: #fafafa;
+            font-size: 22;
+            letter-spacing: 1.5px;
+        }
+    }
+`
 
 class Home extends Component {
     render() {
@@ -72,7 +110,15 @@ class Home extends Component {
                         <Hello>Hello</Hello>
                         <Title>I'm Armin</Title>
                         <SubTitle>Web & Mobile Application Developer</SubTitle>
-                        <Button primary text="About me" containerWidth="20%" />
+                        <ButtonContainer containerWidth="20%">
+                            <SectionLink section={"about"} >
+                                {link => (
+                                    <Link onClick={link.onClick} selected={link.isSelected}>
+                                        <p>About me</p>
+                                </Link>
+                                )}
+                            </SectionLink>
+                        </ButtonContainer>
                     </Layout>
                 </LandingBg>
             </Section>
