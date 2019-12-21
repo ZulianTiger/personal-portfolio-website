@@ -54,6 +54,7 @@ const CardDescription = styled.p`
     padding-bottom: 20px;
     padding-left: 10%;
     padding-right: 10%;
+    min-height: 140px;
 `
 const CardImage = styled.img`
     width: 30%;
@@ -105,7 +106,7 @@ export default class SectionText extends Component {
                         Mobile Application | React Native
                     </Subtitle>
                     <CardDescription>
-                        It looks so good, I might as well not stop. Let's make some happy little clouds in our world. This is the fun part Be brave. You are only limited by your imagination. Zip. That easy.
+                        This project is a fully functional food delivery business solution, including the showcased app used by customers, one app used by cooks and delivery guys, and finally one app used to monitor statistics.
                     </CardDescription>
                     <LearnMoreContainer>
                         <LearnMoreButton>
@@ -117,15 +118,15 @@ export default class SectionText extends Component {
                     </LearnMoreContainer>
                 </CardContainer>
                 <CardContainer>
-                    <CardImage src={require('../Images/bbqlogo.png')} />
+                    <CardImage src={require('../Images/majstorlogo.png')} />
                     <CardTitle>
-                        Card title.
+                        Master of Beer
                     </CardTitle>
                     <Subtitle>
                         Mobile Application | React Native
                     </Subtitle>
                     <CardDescription>
-                        It looks so good, I might as well not stop. Let's make some happy little clouds in our world. This is the fun part Be brave. You are only limited by your imagination. Zip. That easy.
+                        An application used to order and browse through the beer selection of one of the best pubs in Bosnia and Herzegovina. The project includes a separate admin panel application used by the management.
                     </CardDescription>
                     <LearnMoreContainer>
                         <LearnMoreButton>
@@ -137,15 +138,15 @@ export default class SectionText extends Component {
                     </LearnMoreContainer>
                 </CardContainer>
                 <CardContainer>
-                    <CardImage src={require('../Images/bbqlogo.png')} />
+                    <CardImage src={require('../Images/zugmalogo.png')} />
                     <CardTitle>
-                        Card title.
+                        Zugma Car-pooling
                     </CardTitle>
                     <Subtitle>
                         Mobile Application | React Native
                     </Subtitle>
                     <CardDescription>
-                        It looks so good, I might as well not stop. Let's make some happy little clouds in our world. This is the fun part Be brave. You are only limited by your imagination. Zip. That easy.
+                        A React Native Car-pooling social network application developed for the swedish market with the goal of reducing everyday CO2 emissions.
                     </CardDescription>
                     <LearnMoreContainer>
                         <LearnMoreButton>
