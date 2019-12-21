@@ -6,7 +6,6 @@ import { NavigationBar } from '../Components/NavigationBar'
 import { Section } from "react-scroll-section"
 import { SectionLink } from "react-scroll-section";
 import { Link } from 'react-router-dom';
-import Button from '../Components/Button'
 
 import landingimg1080 from '../Images/landingbg1080.png'
 import landingimg1440 from '../Images/landingbg1440.png'
