@@ -25,10 +25,18 @@ const Styles = styled.div`
 
     .nav-link {
         a {
-            color: white;
+            color: #fafafa;
             text-align: right;
             width: 95%;
             display: inline-block;
+            transition: 0.3s;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: none;
+                color: #2b2d35;
+                letter-spacing: 1.3px;
+            }
         }
     }
 `;
@@ -55,16 +63,6 @@ export const NavigationBar = () => (
                 <Nav className="ml-auto">
                     <Nav.Item>
                         <Nav.Link>
-                            <SectionLink section={"home"} >
-                                {link => (
-                                    <Link onClick={link.onClick} selected={link.isSelected}>
-                                        Home
-                                    </Link>)}
-                            </SectionLink>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
                             <SectionLink section={"about"} >
                                 {link => (
                                     <Link onClick={link.onClick} selected={link.isSelected}>
@@ -89,16 +87,6 @@ export const NavigationBar = () => (
                                 {link => (
                                     <Link onClick={link.onClick} selected={link.isSelected}>
                                         Courses
-                                    </Link>)}
-                            </SectionLink>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <SectionLink section={"contact"} >
-                                {link => (
-                                    <Link onClick={link.onClick} selected={link.isSelected}>
-                                        Contact
                                     </Link>)}
                             </SectionLink>
                         </Nav.Link>

@@ -34,7 +34,6 @@ const Logo = styled.img`
     width: auto;
 `
 const Signature = styled.img`
-    margin-left: 10px;
     height: 20px;
     width: auto;
     margin-top: 20px;
@@ -103,6 +102,7 @@ class Footer extends Component {
                         <SignatureContainer>
                             <Logo src={require('../Images/logo.png')} />
                             <Signature src={require('../Images/signature.png')} />
+                            <p style={{color: "#fafafa"}}>ady0606@gmail.com</p>
                         </SignatureContainer>
                         <LinksContainer>
                             <SingleLinkContainer style={{ flexDirection: "row", display: "flex" }}>
