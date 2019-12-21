@@ -85,6 +85,12 @@ const LearnMoreUnderline = styled.div`
     background-color: #cc0c1c;
     border-radius: 20px;
 `
+const Subtitle = styled.h6`
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+`
 
 export default class SectionText extends Component {
     render() {
@@ -93,8 +99,11 @@ export default class SectionText extends Component {
                 <CardContainer>
                     <CardImage src={require('../Images/bbqlogo.png')} />
                     <CardTitle>
-                        Card title.
+                        BBQ Fast Food
                     </CardTitle>
+                    <Subtitle>
+                        Mobile Application | React Native
+                    </Subtitle>
                     <CardDescription>
                         It looks so good, I might as well not stop. Let's make some happy little clouds in our world. This is the fun part Be brave. You are only limited by your imagination. Zip. That easy.
                     </CardDescription>
@@ -112,6 +121,9 @@ export default class SectionText extends Component {
                     <CardTitle>
                         Card title.
                     </CardTitle>
+                    <Subtitle>
+                        Mobile Application | React Native
+                    </Subtitle>
                     <CardDescription>
                         It looks so good, I might as well not stop. Let's make some happy little clouds in our world. This is the fun part Be brave. You are only limited by your imagination. Zip. That easy.
                     </CardDescription>
@@ -129,6 +141,9 @@ export default class SectionText extends Component {
                     <CardTitle>
                         Card title.
                     </CardTitle>
+                    <Subtitle>
+                        Mobile Application | React Native
+                    </Subtitle>
                     <CardDescription>
                         It looks so good, I might as well not stop. Let's make some happy little clouds in our world. This is the fun part Be brave. You are only limited by your imagination. Zip. That easy.
                     </CardDescription>
