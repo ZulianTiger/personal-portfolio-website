@@ -107,15 +107,15 @@ class Footer extends Component {
                         <LinksContainer>
                             <SingleLinkContainer style={{ flexDirection: "row", display: "flex" }}>
                                 <i style={{ color: "#fafafa", fontSize: 22 }} className="fab fa-github"></i>
-                                <Link href="http://www.github.com/ZulianTiger">github.com/ZulianTiger</Link>
+                                <Link href="http://www.github.com/ZulianTiger" target="_blank" >github.com/ZulianTiger</Link>
                             </SingleLinkContainer>
                             <SingleLinkContainer style={{ flexDirection: "row", display: "flex" }}>
                                 <i style={{ color: "#fafafa", fontSize: 22 }} className="fab fa-linkedin-in"></i>
-                                <Link href="https://www.linkedin.com/in/armin-sarajlic/">linkedin.com/armin-sarajlic</Link>
+                                <Link href="https://www.linkedin.com/in/armin-sarajlic/" target="_blank" >linkedin.com/armin-sarajlic</Link>
                             </SingleLinkContainer>
                             <SingleLinkContainer style={{ flexDirection: "row", display: "flex" }}>
                                 <i style={{ color: "#fafafa", fontSize: 22 }} className="fas fa-graduation-cap"></i>
-                                <Link href="https://www.udemy.com/user/armin-sarajlic/">udemy.com/armin-sarajlic</Link>
+                                <Link href="https://www.udemy.com/user/armin-sarajlic/" target="_blank" >udemy.com/armin-sarajlic</Link>
                             </SingleLinkContainer>
                         </LinksContainer>
                     </FooterInfoContainer>
