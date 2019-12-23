@@ -136,7 +136,7 @@ export default class Courses extends Component {
                                 <CourseTitle>Master React Native by Developing a Full Cross-Platform App</CourseTitle>
                                 <CourseDescription>Learn how to design and create a cross platform mobile app with Adobe XD and React Native.</CourseDescription>
                                 <LearnMoreContainer>
-                                    <a href="https://www.udemy.com/course/reactnativefoodapp/" target="_blank" >
+                                    <a style={{textDecoration: "none"}} href="https://www.udemy.com/course/reactnativefoodapp/" target="_blank" >
                                         <LearnMoreText>
                                             view on udemy
                                             <LearnMoreUnderline />
@@ -154,7 +154,7 @@ export default class Courses extends Component {
                                 <CourseTitle>Unity: MySQL Database Management</CourseTitle>
                                 <CourseDescription>Create a Login & Registration system for your game in 1 hour!</CourseDescription>
                                 <LearnMoreContainer>
-                                    <a href="https://www.udemy.com/course/unity-mysql-database-management/" target="_blank" >
+                                    <a style={{textDecoration: "none"}} href="https://www.udemy.com/course/unity-mysql-database-management/" target="_blank" >
                                         <LearnMoreText>
                                             view on udemy
                                             <LearnMoreUnderline />
@@ -174,7 +174,7 @@ export default class Courses extends Component {
                                 <CourseTitle>Unity: Learn Android Game Development by recreating games</CourseTitle>
                                 <CourseDescription>A guide on how to make the following games in Unity: Color Switch, aa, Flappy Bird, Dino T-Rex</CourseDescription>
                                 <LearnMoreContainer>
-                                    <a href="https://www.udemy.com/course/unity-learn-android-game-development-by-recreating-games/" target="_blank" >
+                                    <a style={{textDecoration: "none"}} href="https://www.udemy.com/course/unity-learn-android-game-development-by-recreating-games/" target="_blank" >
                                         <LearnMoreText>
                                             view on udemy
                                             <LearnMoreUnderline />
@@ -192,7 +192,7 @@ export default class Courses extends Component {
                                 <CourseTitle>IP Addressing for Beginners - CCNA Preparation</CourseTitle>
                                 <CourseDescription>Everything a beginner needs to know about IP addresses and basics of Network Communication.</CourseDescription>
                                 <LearnMoreContainer>
-                                    <a href="https://www.udemy.com/course/ip-addressing-for-beginners-ccna-preparation/" target="_blank" >
+                                    <a style={{textDecoration: "none"}} href="https://www.udemy.com/course/ip-addressing-for-beginners-ccna-preparation/" target="_blank" >
                                         <LearnMoreText>
                                             view on udemy
                                             <LearnMoreUnderline />
