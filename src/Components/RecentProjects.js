@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Container = styled.div`
     width: 100%;
@@ -67,10 +68,6 @@ const LearnMoreContainer = styled.div`
     display: flex;
     padding-bottom: 20px;
 `
-const LearnMoreButton = styled.button`
-    background-color: transparent;
-    border-width: 0px;
-`
 const LearnMoreText = styled.p`
     color: white;
     text-align: center;
@@ -95,6 +92,11 @@ const Subtitle = styled.h6`
 
 export default class SectionText extends Component {
     render() {
+        const Child = ({ match }) => (
+            <div>
+                <h3>ID: {match.params.id}</h3>
+            </div>
+        )
         return (
             <Container>
                 <CardContainer>
@@ -109,12 +111,15 @@ export default class SectionText extends Component {
                         This project is a fully functional food delivery business solution, including the showcased app used by customers, one app used by cooks and delivery guys, and finally one app used to monitor statistics.
                     </CardDescription>
                     <LearnMoreContainer>
-                        <LearnMoreButton>
+                        <Link style={{ textDecoration: "none" }} to={{
+                            pathname: `/project`,
+                            search: `?id=${0}`,
+                        }}>
                             <LearnMoreText>
                                 Learn More
-                                <LearnMoreUnderline />
+                            <LearnMoreUnderline />
                             </LearnMoreText>
-                        </LearnMoreButton>
+                        </Link>
                     </LearnMoreContainer>
                 </CardContainer>
                 <CardContainer>
@@ -129,12 +134,15 @@ export default class SectionText extends Component {
                         An application used to order and browse through the beer selection of one of the best pubs in Bosnia and Herzegovina. The project includes a separate admin panel application used by the management.
                     </CardDescription>
                     <LearnMoreContainer>
-                        <LearnMoreButton>
+                        <Link style={{ textDecoration: "none" }} to={{
+                            pathname: `/project`,
+                            search: `?id=${1}`,
+                        }}>
                             <LearnMoreText>
                                 Learn More
-                                <LearnMoreUnderline />
+                            <LearnMoreUnderline />
                             </LearnMoreText>
-                        </LearnMoreButton>
+                        </Link>
                     </LearnMoreContainer>
                 </CardContainer>
                 <CardContainer>
@@ -149,12 +157,15 @@ export default class SectionText extends Component {
                         A React Native Car-pooling social network application developed for the swedish market with the goal of reducing everyday CO2 emissions.
                     </CardDescription>
                     <LearnMoreContainer>
-                        <LearnMoreButton>
+                        <Link style={{ textDecoration: "none" }} to={{
+                            pathname: `/project`,
+                            search: `?id=${2}`,
+                        }}>
                             <LearnMoreText>
                                 Learn More
-                                <LearnMoreUnderline />
+                            <LearnMoreUnderline />
                             </LearnMoreText>
-                        </LearnMoreButton>
+                        </Link>
                     </LearnMoreContainer>
                 </CardContainer>
             </Container>
