@@ -34,7 +34,7 @@ const Styles = styled.div`
 
             &:hover {
                 text-decoration: none;
-                color: #2b2d35;
+                color: "#2b2d35";
                 letter-spacing: 1.3px;
             }
         }
