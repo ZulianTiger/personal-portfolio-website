@@ -44,11 +44,24 @@ const RightHalf = styled.div`
 const Image = styled.img`
     width: 100%;
 `
+const LinksContainer = styled.div`
+    margin-top: 50px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: left;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+`
+const Link = styled.a`
+    text-align: center;
+`
 
 let projectID;
 
 //----------TEMPORARY---------------
-let projectTitle, projectTech, projectDesc, projectCategory
+let projectTitle, projectTech, projectDesc, projectCategory, projectApple, projectAndroid;
 //----------TEMPORARY---------------
 
 export default class ProjectDetails extends Component {
@@ -66,6 +79,16 @@ export default class ProjectDetails extends Component {
                     <LeftHalf>
                         <Title title={projectTitle} subtitle={projectCategory} />
                         <SectionText text={projectDesc} />
+                        <LinksContainer>
+                            <Link href={projectApple} target="_blank" >
+                                <img style={{height: 50, marginTop: 10, marginBottom: 10}} src={require('../Images/appstore.svg')} />
+                            </Link>
+                            <Link href={projectAndroid} target="_blank" >
+                                <img style={{height: 70}} src={require('../Images/playstore.png')} />
+                            </Link>
+                        </LinksContainer>
+                        
+                        
                     </LeftHalf>
                     <RightHalf>
                         <Image src={require('../Images/mob.png')} />
@@ -85,20 +108,24 @@ export default class ProjectDetails extends Component {
         else if (ID == "?id=0") {
             projectTitle = "BBQ Fast Food";
             projectDesc = "That's the way I look when I get home late; black and blue. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can work and carry-on and put lots of little happy things in here. Let's just drop a little Evergreen right here.";
-            projectTech = "React Native"
-            projectCategory = "Mobile Application"
+            projectTech = "React Native";
+            projectCategory = "Mobile Application";
+            projectApple = "https://apps.apple.com/us/app/bbq-dostava/id1465941391";
+            projectAndroid = "https://play.google.com/store/apps/details?id=com.aksifood2";
         }
         else if (ID == "?id=1") {
             projectTitle = "Master of Beer";
             projectDesc = "That's the way I look when I get home late; black and blue. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can work and carry-on and put lots of little happy things in here. Let's just drop a little Evergreen right here.";
-            projectTech = "React Native"
-            projectCategory = "Mobile Application"
+            projectTech = "React Native";
+            projectCategory = "Mobile Application";
+            projectApple = "https://apps.apple.com/us/app/majstor-za-pivo/id1473955739";
+            projectAndroid = "https://play.google.com/store/apps/details?id=com.majstorzapivo";
         }
         else if (ID == "?id=2") {
             projectTitle = "Zugma Car Pooling";
             projectDesc = "That's the way I look when I get home late; black and blue. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can work and carry-on and put lots of little happy things in here. Let's just drop a little Evergreen right here.";
-            projectTech = "React Native"
-            projectCategory = "Mobile Application"
+            projectTech = "React Native";
+            projectCategory = "Mobile Application";
         }
     }
 }
