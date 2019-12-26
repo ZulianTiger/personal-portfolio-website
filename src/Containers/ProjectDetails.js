@@ -2,16 +2,47 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import history from '../Components/history'
 import Footer from '../Containers/Footer'
+import Title from '../Components/Title'
+import SectionText from '../Components/SectionText'
 
 const Container = styled.div`
     padding-top: 65px;
+    padding-bottom: 100px;
     width: 100%;
     background-color: #2b2d35;
-    min-height: 100vh;
+    flex-direction: row;
+    display: flex;
+    @media only screen and (max-width: 768px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column-reverse;
+    }
+    @media only screen and (min-width: 600px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media only screen and (min-width: 992px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 `
-const Title = styled.h2`
-    color: #fafafa;
-
+const LeftHalf = styled.div`
+    width: 50%;
+    max-height: 100%;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 75px;
+    }
+`
+const RightHalf = styled.div`
+    width: 50%;
+    max-height: 100%;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+`
+const Image = styled.img`
+    width: 100%;
 `
 
 let projectID;
@@ -26,6 +57,24 @@ export default class ProjectDetails extends Component {
         projectID = this.props.location.search;
         this.checkProjectID(projectID);
         window.scrollTo(0, 0);
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+                <Container>
+                    <LeftHalf>
+                        <Title title={projectTitle} subtitle={projectCategory} />
+                        <SectionText text={projectDesc} />
+                    </LeftHalf>
+                    <RightHalf>
+                        <Image src={require('../Images/mob.png')} />
+                    </RightHalf>
+
+                </Container>
+                <Footer />
+            </React.Fragment>
+        )
     }
 
     checkProjectID(ID) {
@@ -51,18 +100,5 @@ export default class ProjectDetails extends Component {
             projectTech = "React Native"
             projectCategory = "Mobile Application"
         }
-    }
-
-    render() {
-        return (
-            <React.Fragment>
-                <Container>
-                    <Title>{projectTitle}</Title>
-                    <h2>Project details page</h2>
-                    <h2>this.props {JSON.stringify(this.props)}</h2>
-                </Container>
-                <Footer />
-            </React.Fragment>
-        )
     }
 }
