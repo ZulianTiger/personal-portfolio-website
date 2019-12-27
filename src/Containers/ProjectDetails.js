@@ -56,6 +56,7 @@ const LinksContainer = styled.div`
 `
 const Link = styled.a`
     text-align: center;
+    visibility: ${props => (props.hasLink ? "visible" : "hidden")};
 `
 
 let projectID;
@@ -80,10 +81,10 @@ export default class ProjectDetails extends Component {
                         <Title title={projectTitle} subtitle={projectCategory} />
                         <SectionText text={projectDesc} />
                         <LinksContainer>
-                            <Link href={projectApple} target="_blank" >
+                            <Link hasLink={projectApple} href={projectApple} target="_blank" >
                                 <img style={{height: 50, marginTop: 10, marginBottom: 10}} src={require('../Images/appstore.svg')} />
                             </Link>
-                            <Link href={projectAndroid} target="_blank" >
+                            <Link hasLink={projectAndroid} href={projectAndroid} target="_blank" >
                                 <img style={{height: 70}} src={require('../Images/playstore.png')} />
                             </Link>
                         </LinksContainer>
