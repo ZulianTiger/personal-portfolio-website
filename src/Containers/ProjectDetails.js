@@ -87,14 +87,11 @@ export default class ProjectDetails extends Component {
                             <Link hasLink={projectAndroid} href={projectAndroid} target="_blank" >
                                 <img style={{height: 70}} src={require('../Images/playstore.png')} />
                             </Link>
-                        </LinksContainer>
-                        
-                        
+                        </LinksContainer> 
                     </LeftHalf>
                     <RightHalf>
                         <Image src={require('../Images/mob.png')} />
                     </RightHalf>
-
                 </Container>
                 <Footer />
             </React.Fragment>
@@ -108,7 +105,7 @@ export default class ProjectDetails extends Component {
         }
         else if (ID == "?id=0") {
             projectTitle = "BBQ Fast Food";
-            projectDesc = "That's the way I look when I get home late; black and blue. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can work and carry-on and put lots of little happy things in here. Let's just drop a little Evergreen right here.";
+            projectDesc = "Our client's goal for this project is to have a fully functional food delivery business solution, including the showcased app used by customers, one app used by cooks and delivery guys, and finally one app used for administration and monitoring statistics. The data is stored in a central database and all apps are connected to it to manage an pull data.";
             projectTech = "React Native";
             projectCategory = "Mobile Application";
             projectApple = "https://apps.apple.com/us/app/bbq-dostava/id1465941391";
@@ -116,7 +113,7 @@ export default class ProjectDetails extends Component {
         }
         else if (ID == "?id=1") {
             projectTitle = "Master of Beer";
-            projectDesc = "That's the way I look when I get home late; black and blue. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can work and carry-on and put lots of little happy things in here. Let's just drop a little Evergreen right here.";
+            projectDesc = "React Native promotional application for one of the best pubs in Sarajevo (Bosnia and Herzegovina) where customers can search and filter through the menu along with prices and descriptions for each product, see upcoming events, and make reservations. This project also consists of two apps (Customer app, and admin panel app).";
             projectTech = "React Native";
             projectCategory = "Mobile Application";
             projectApple = "https://apps.apple.com/us/app/majstor-za-pivo/id1473955739";
@@ -124,7 +121,7 @@ export default class ProjectDetails extends Component {
         }
         else if (ID == "?id=2") {
             projectTitle = "Zugma Car Pooling";
-            projectDesc = "That's the way I look when I get home late; black and blue. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. You can work and carry-on and put lots of little happy things in here. Let's just drop a little Evergreen right here.";
+            projectDesc = "Car-pooling and renting social network iOS and Android application written in React Native, developed for the Swedish market with the goal of reducing everyday CO2 emissions. This application includes various features such as BankID registration/login, posting travel plans (or travel requests), car renting, adding friends, instant messaging chat, and a review system.";
             projectTech = "React Native";
             projectCategory = "Mobile Application";
         }

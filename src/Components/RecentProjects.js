@@ -111,7 +111,7 @@ export default class SectionText extends Component {
                         This project is a fully functional food delivery business solution, including the showcased app used by customers, one app used by cooks and delivery guys, and finally one app used to monitor statistics.
                     </CardDescription>
                     <LearnMoreContainer>
-                        <Link style={{ textDecoration: "none" }} to={{
+                        <Link target="_none" style={{ textDecoration: "none" }} to={{
                             pathname: `/project`,
                             search: `?id=${0}`,
                         }}>
@@ -134,7 +134,7 @@ export default class SectionText extends Component {
                         An application used to order and browse through the beer selection of one of the best pubs in Bosnia and Herzegovina. The project includes a separate admin panel application used by the management.
                     </CardDescription>
                     <LearnMoreContainer>
-                        <Link style={{ textDecoration: "none" }} to={{
+                        <Link target="_none" style={{ textDecoration: "none" }} to={{
                             pathname: `/project`,
                             search: `?id=${1}`,
                         }}>
@@ -157,7 +157,7 @@ export default class SectionText extends Component {
                         A React Native Car-pooling social network application developed for the swedish market with the goal of reducing everyday CO2 emissions.
                     </CardDescription>
                     <LearnMoreContainer>
-                        <Link style={{ textDecoration: "none" }} to={{
+                        <Link target="_none" style={{ textDecoration: "none" }} to={{
                             pathname: `/project`,
                             search: `?id=${2}`,
                         }}>
