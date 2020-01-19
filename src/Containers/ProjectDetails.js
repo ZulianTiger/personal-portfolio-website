@@ -62,7 +62,7 @@ const Link = styled.a`
 let projectID;
 
 //----------TEMPORARY---------------
-let projectTitle, projectTech, projectDesc, projectCategory, projectApple, projectAndroid;
+let projectTitle, projectTech, projectDesc, projectCategory, projectApple, projectAndroid, projectImage;
 //----------TEMPORARY---------------
 
 export default class ProjectDetails extends Component {
@@ -90,7 +90,7 @@ export default class ProjectDetails extends Component {
                         </LinksContainer> 
                     </LeftHalf>
                     <RightHalf>
-                        <Image src={require('../Images/mob.png')} />
+                        <Image src={projectImage} />
                     </RightHalf>
                 </Container>
                 <Footer />
@@ -110,6 +110,7 @@ export default class ProjectDetails extends Component {
             projectCategory = "Mobile Application";
             projectApple = "https://apps.apple.com/us/app/bbq-dostava/id1465941391";
             projectAndroid = "https://play.google.com/store/apps/details?id=com.aksifood2";
+            projectImage = require('../Images/bbqshowcase.png')
         }
         else if (ID == "?id=1") {
             projectTitle = "Master of Beer";
@@ -118,12 +119,14 @@ export default class ProjectDetails extends Component {
             projectCategory = "Mobile Application";
             projectApple = "https://apps.apple.com/us/app/majstor-za-pivo/id1473955739";
             projectAndroid = "https://play.google.com/store/apps/details?id=com.majstorzapivo";
+            projectImage = require('../Images/majstorshowcase.png')
         }
         else if (ID == "?id=2") {
             projectTitle = "Zugma Car Pooling";
             projectDesc = "Car-pooling and renting social network iOS and Android application written in React Native, developed for the Swedish market with the goal of reducing everyday CO2 emissions. This application includes various features such as BankID registration/login, posting travel plans (or travel requests), car renting, adding friends, instant messaging chat, and a review system.";
             projectTech = "React Native";
             projectCategory = "Mobile Application";
+            projectImage = require('../Images/zugmashowcase.png')
         }
     }
 }
