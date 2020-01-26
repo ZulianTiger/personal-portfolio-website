@@ -91,6 +91,16 @@ export const NavigationBar = () => (
                             </SectionLink>
                         </Nav.Link>
                     </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link>
+                            <SectionLink section={"contact"} >
+                                {link => (
+                                    <Link onClick={link.onClick} selected={link.isSelected}>
+                                        Contact
+                                    </Link>)}
+                            </SectionLink>
+                        </Nav.Link>
+                    </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
